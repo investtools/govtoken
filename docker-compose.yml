@@ -1,0 +1,17 @@
+version: "3"
+services:
+        rgb-node:
+                build: nodes/rgb-node 
+                image: rgb_node:latest
+        lnp-node:
+                build: nodes/lnp-node
+                image: lnp-node:latest
+        storm-node:
+                build: nodes/storm-node
+                image: storm-node:latest
+        storm-stored-node:
+                build: nodes/storm-stored
+                image: storm-stored:latest
+        bp-node:
+                build: nodes/bp-node
+                image: bp-node:latest
